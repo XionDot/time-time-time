@@ -19,15 +19,8 @@ root = tk.Tk()
 root.attributes('-fullscreen', True)
 root.configure(background='black')
 
-# # Time label
-# time_label = tk.Label(root, font=('Anonymous Pro', 300, 'bold'), fg='white', bg='black', padx=20, pady=20, anchor='center', relief='flat', borderwidth=0)
-# time_label.pack(expand=True)
 
-# # Date label
-# date_label = tk.Label(root, font=('Arial', 30), fg='white', bg='black', anchor='ne')
-# date_label.pack(side=tk.TOP, anchor='ne')
-
-###### standard arial #######
+###### FONT : standard arial #######
 # Time label
 time_label = tk.Label(root, font=('Cascadia Pro ', 300, 'bold'), fg='white', bg='black')
 time_label.pack(expand=True)
@@ -35,16 +28,6 @@ time_label.pack(expand=True)
 # Date label
 date_label = tk.Label(root, font=('Consolas', 30), fg='white', bg='black', anchor='ne')
 date_label.pack(side=tk.TOP, anchor='ne')
-
-###### standard Helvetica #######
-
-# # Time label
-# time_label = tk.Label(root, font=('Helvetica', 300), fg='white', bg='black')
-# time_label.pack(expand=True)
-
-# # Date label
-# date_label = tk.Label(root, font=('Helvetica', 20), fg='white', bg='black', anchor='ne')
-# date_label.pack(side=tk.TOP, anchor='ne')
 
 # Bind key press events
 root.bind('<KeyPress>', on_key_press)
